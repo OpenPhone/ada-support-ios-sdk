@@ -27,7 +27,7 @@ class OfflineViewController: UIViewController {
             storyboard = UIStoryboard(name: "AdaWebHostViewController", bundle: frameworkBundle)
         } else {
             // Used for if SDK was manually imported
-            storyboard = UIStoryboard(name: "AdaWebHostViewController", bundle: bundle)
+            storyboard = UIStoryboard(name: "AdaWebHostViewController", bundle: .module)
         }
         return storyboard.instantiateViewController(withIdentifier: "OfflineViewController") as? OfflineViewController
     }
